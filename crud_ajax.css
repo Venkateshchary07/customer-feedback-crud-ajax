@@ -1,0 +1,112 @@
+body {
+    margin: 2% 10%;
+}
+
+.feedback {
+    height: auto;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+}
+
+.header-bar {
+    height: 3vh;
+    background-color: rgb(237, 233, 233, 0.8);
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    padding: 0.5%;
+}
+
+.header-bar .user-icons {
+    margin-left: 85%;
+}
+
+/* table rows */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    height: 5vh;
+    border: 1px solid grey;
+    text-align: center;
+}
+
+td {
+    height: 9vh;
+}
+
+/* add user pop */
+.addUserForm {
+    padding: 20px 40px;
+    width: 30vw;
+    border: 1px solid grey;
+    box-shadow: 1px 2px 2px grey;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0 18rem;
+}
+
+#name, #rating, #comment, .saveButton, .closeButton {
+    height: 28px;
+    width: 25rem;
+    border-radius: 4px;
+    border: 1px solid grey;
+    box-shadow: 0px 1px 1px grey;
+    margin: 3px;
+}
+
+.saveButton {
+    background-color: rgb(28, 28, 216);
+    color: white;
+}
+
+.saveButton, .closeButton {
+    width: 25.5rem;
+}
+
+/* In action field buttons */
+.editButton, .deleteButton {
+    margin: 0;
+    height: 1.8rem;
+    width: 3rem;
+    border: none;
+    color: white;
+}
+.editButton {
+    background-color: lightseagreen;
+}
+.deleteButton {
+    background-color: orangered;
+}
+
+/* delete confirm box */
+.confirm-box {
+    width: 30vw;
+    display: none;
+    border: 1px solid gray;
+    box-shadow: 1px 2px 2px gray;
+    text-align: left;
+    padding: 10px;
+}
+.confirm-box p {
+    margin: 2%;
+}
+.confirm-box #delete, #cancel {
+    height: 2rem;
+    width: 4.5rem;
+    color: white;
+    border: none;
+    margin: 2%;
+}
+#delete {
+    background-color: orange;
+    box-shadow: 0px 1px 4px orangered;
+}
+#cancel {
+    background-color: green;
+    box-shadow: 0px 1px 4px green;
+}

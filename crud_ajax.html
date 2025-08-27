@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD AJAX Assignment</title>
+    <link rel="stylesheet" href="crud_ajax.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="feedback">
+        <!-- ADD User Information -->
+        <div class="addUserForm">
+            <form id="user-data" action="">
+                <input type="text" id="name" placeholder="Name"><br>
+                <input type="number" id="rating" placeholder="Rating"><br>
+                <input type="text" id="comment" placeholder="Comment"><br>
+                <button type="button" class="saveButton" onclick="saveData()">Save</button><br>
+                <button type="button" class="closeButton" onclick="document.querySelector('.addUserForm').style.display='none'">Close</button>
+            </form>
+        </div>
+
+        <!-- Delete Confirmation -->
+        <div class="confirm-box">
+            <p id="confirm_msg">Are you sure you want delete this feedback?</p>
+            <button id="delete">Delete</button>
+            <button id="cancel">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="">
+        <div class="header-bar">
+            <h3>MOCK API</h3>
+            <div class="user-icons">
+                <i class="fa-solid fa-user-plus addButton" onclick='add_new_users()' style="color:black"></i>
+                <i class="fa-solid fa-user" style="color:black"></i>
+            </div>
+        </div>
+    </div>
+
+    <h2>Customer Feedback System</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Feedback Id</th>
+                <th>Customer Name</th>
+                <th>Rating</th>
+                <th>Comment</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="crud_ajax.js"></script>
+</body>
+</html>
